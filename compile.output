@@ -1,0 +1,158 @@
+mkdir -p bin
+cd build && cmake -Wdev -DCMAKE_TOOLCHAIN_FILE=/opt/ros/indigo/share/ros/core/rosbuild/rostoolchain.cmake  ..
+[rosbuild] Building package raven_2
+[rosbuild] using multiarch 'x86_64-linux-gnu' for finding Boost
+-- Using CATKIN_DEVEL_PREFIX: /opt/raven_ros/raven_2/build/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/indigo
+-- This workspace overlays: /opt/ros/indigo
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Skip enable_testing() for dry packages
+-- Using CATKIN_TEST_RESULTS_DIR: /opt/raven_ros/raven_2/build/test_results
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.6.14
+-- Using these message generators: gencpp;genlisp;genpy
+[rosbuild] Including /opt/ros/indigo/share/roslisp/rosbuild/roslisp.cmake
+[rosbuild] Including /opt/ros/indigo/share/roscpp/rosbuild/roscpp.cmake
+[rosbuild] Including /opt/ros/indigo/share/rospy/rosbuild/rospy.cmake
+MSG: gencfg_cpp on:MyStuff.cfg
+[gendeps] Finding dependencies for /opt/raven_ros/raven_2/cfg/MyStuff.cfg
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/raven_ros/raven_2/build
+cd build && make 
+make[1]: Entering directory `/opt/raven_ros/raven_2/build'
+make[2]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+[  0%] Built target rosbuild_premsgsrvgen
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+[  2%] Built target ROSBUILD_gencfg_cpp
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+[ 12%] make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+[ 14%] [ 19%] Built target ROSBUILD_genmsg_lisp
+Built target ROSBUILD_genmsg_py
+Built target ROSBUILD_genmsg_cpp
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+[ 19%] Built target rospack_gencfg
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+[ 19%] make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+Built target rospack_genmsg
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+[ 19%] [ 19%] Built target rospack_genmsg_libexe
+Built target rospack_gencfg_real
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+[ 19%] Built target rospack_genmsg_all
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+[ 19%] Built target rosbuild_precompile
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+Scanning dependencies of target r2_control
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+make[3]: Entering directory `/opt/raven_ros/raven_2/build'
+[ 21%] [ 24%] [ 26%] [ 29%] [ 31%] [ 34%] Building CXX object CMakeFiles/r2_control.dir/src/raven/dof.cpp.o
+[ 36%] Building CXX object CMakeFiles/r2_control.dir/src/raven/r2_kinematics.cpp.o
+[ 39%] [ 41%] [ 46%] [ 46%] [ 48%] [ 53%] [ 53%] [ 58%] [ 58%] Building CXX object CMakeFiles/r2_control.dir/src/raven/get_USB_packet.cpp.o
+[ 65%] [ 65%] [ 65%] [ 68%] [ 70%] [ 73%] [ 75%] [ 78%] Building CXX object CMakeFiles/r2_control.dir/src/raven/fwd_cable_coupling.cpp.o
+[ 82%] [ 82%] [ 85%] [ 87%] [ 90%] Building CXX object CMakeFiles/r2_control.dir/src/raven/globals.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/grav_comp.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/local_io.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/mapping.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/overdrive_detect.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/hmatrix.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/init.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/inv_cable_coupling.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/put_USB_packet.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/pid_control.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/parallel.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/motor.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/rt_raven.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/state_estimate.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/update_atmel_io.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/state_machine.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/console_process.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/rt_process_preempt.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/homing.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/trajectory.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/t_to_DAC_val.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/USB_init.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/utils.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/tools.cpp.o
+Building CXX object CMakeFiles/r2_control.dir/src/raven/update_device_state.cpp.o
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp: In function ‘void fwdMechTorqueCoupling(mechanism*)’:
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:195:16: warning: variable ‘m3’ set but not used [-Wunused-but-set-variable]
+  float m1, m2, m3, m4, m5, m6, m7;
+                ^
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:195:24: warning: variable ‘m5’ set but not used [-Wunused-but-set-variable]
+  float m1, m2, m3, m4, m5, m6, m7;
+                        ^
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:195:28: warning: variable ‘m6’ set but not used [-Wunused-but-set-variable]
+  float m1, m2, m3, m4, m5, m6, m7;
+                            ^
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:195:32: warning: variable ‘m7’ set but not used [-Wunused-but-set-variable]
+  float m1, m2, m3, m4, m5, m6, m7;
+                                ^
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:197:22: warning: variable ‘tr3’ set but not used [-Wunused-but-set-variable]
+  float tr1=0, tr2=0, tr3=0, tr4=0, tr5=0, tr6=0, tr7=0;
+                      ^
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:197:36: warning: variable ‘tr5’ set but not used [-Wunused-but-set-variable]
+  float tr1=0, tr2=0, tr3=0, tr4=0, tr5=0, tr6=0, tr7=0;
+                                    ^
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:197:43: warning: variable ‘tr6’ set but not used [-Wunused-but-set-variable]
+  float tr1=0, tr2=0, tr3=0, tr4=0, tr5=0, tr6=0, tr7=0;
+                                           ^
+/opt/raven_ros/raven_2/src/raven/fwd_cable_coupling.cpp:197:50: warning: variable ‘tr7’ set but not used [-Wunused-but-set-variable]
+  float tr1=0, tr2=0, tr3=0, tr4=0, tr5=0, tr6=0, tr7=0;
+                                                  ^
+/opt/raven_ros/raven_2/src/raven/pid_control.cpp: In function ‘float jvel_PI_control(DOF*, int)’:
+/opt/raven_ros/raven_2/src/raven/pid_control.cpp:122:47: warning: operation on ‘kv[15]’ may be undefined [-Wsequence-point]
+     kv[GRASP2_GREEN]  = kv[GRASP2_GREEN]   = 0;
+                                               ^
+/opt/raven_ros/raven_2/src/raven/update_atmel_io.cpp: In function ‘void updateAtmelInputs(robot_device, int)’:
+/opt/raven_ros/raven_2/src/raven/update_atmel_io.cpp:92:9: warning: variable ‘PLCState’ set but not used [-Wunused-but-set-variable]
+     int PLCState;
+         ^
+/opt/raven_ros/raven_2/src/raven/utils.cpp: In function ‘void strtoken(char*, char*, char)’:
+/opt/raven_ros/raven_2/src/raven/utils.cpp:272:15: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+     result[i] = NULL;
+               ^
+/opt/raven_ros/raven_2/src/raven/utils.cpp: In function ‘void strcopy(const char*, char*)’:
+/opt/raven_ros/raven_2/src/raven/utils.cpp:293:13: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+     dest[i] = NULL;
+             ^
+/opt/raven_ros/raven_2/src/raven/grav_comp.cpp: In function ‘void getGravityTorque(robot_device&, param_pass&)’:
+/opt/raven_ros/raven_2/src/raven/grav_comp.cpp:171:15: warning: variable ‘COM3_0’ set but not used [-Wunused-but-set-variable]
+   tf::Vector3 COM3_0 = T01 * COM3_1;
+               ^
+/opt/raven_ros/raven_2/src/raven/grav_comp.cpp:175:15: warning: variable ‘COM2_0’ set but not used [-Wunused-but-set-variable]
+   tf::Vector3 COM2_0 = T01 * COM2_1;
+               ^
+/opt/raven_ros/raven_2/src/raven/grav_comp.cpp:178:15: warning: variable ‘COM1_0’ set but not used [-Wunused-but-set-variable]
+   tf::Vector3 COM1_0 = T01 * COM1_1;
+               ^
+/opt/raven_ros/raven_2/src/raven/grav_comp.cpp:130:21: warning: variable ‘G0Static’ set but not used [-Wunused-but-set-variable]
+  static tf::Vector3 G0Static = tf::Vector3(-9.8, 0, 0);
+                     ^
+/opt/raven_ros/raven_2/src/raven/r2_kinematics.cpp: In function ‘int r2_inv_kin(robot_device*, int)’:
+/opt/raven_ros/raven_2/src/raven/r2_kinematics.cpp:390:14: warning: unused variable ‘arm_check’ [-Wunused-variable]
+   static int arm_check = 0;
+              ^
+Linking CXX executable ../bin/r2_control
+make[3]: Leaving directory `/opt/raven_ros/raven_2/build'
+[100%] Built target r2_control
+make[2]: Leaving directory `/opt/raven_ros/raven_2/build'
+make[1]: Leaving directory `/opt/raven_ros/raven_2/build'
